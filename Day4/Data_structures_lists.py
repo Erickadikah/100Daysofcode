@@ -11,5 +11,6 @@ names = names_string.split(",")
 # random_choice = random.randint(0, num_items - 1)
 
 # person_to_pay = names[random_choice]
+# allows to print the name in random and with code efficiency.
 person_who_will_pay = random.choice(names)
 print(person_who_will_pay + " is the person goin to pay for the meal today.")

@@ -8,6 +8,7 @@ user_choice = int(input(
 print(game_images[user_choice])
 # asks user to choose an in put.
 
+# this function make scomputer choose randomly between 0-2 numbres.
 computer_choice = random.randint(0, 2)
 print(f"computer chose {computer_choice}")
 

@@ -1,4 +1,5 @@
 # thi program checks if a year is a leap year.
+# nested loop used
 year = int(input("which year do you  want to check?\n"))
 if year % 4 == 0:
     if year % 100 == 0:

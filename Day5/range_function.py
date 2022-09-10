@@ -5,7 +5,7 @@
 #     total += number
 # print(total)
 total = 0
-for number in range(1, 100):
+for number in range(1, 101):
     if number % 3 == 0 and number % 5 == 0:
         # divisible by both 5 and  3
         print("fizzbuzz")

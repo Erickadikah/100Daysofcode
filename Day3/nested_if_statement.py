@@ -9,5 +9,7 @@ if height >= 120:  # comparison operator
         print("please pay $7.")
     else:
         print("please pay $12.")
+
+
 else:
     print("sorry, you have to grow taller before you can ride.")

@@ -10,9 +10,9 @@ struct node
 int main()
 {
     struct node *head = malloc(sizeof(struct node));
-    head->prev = NULL;
-    head->data = 10;
-    head->next = NULL;
+    head->prev = NULL;   //first  linked list.
+    head->data = 1;      //the data being inputed.
+    head->next = NULL;   // the header pointer to point NULL.
 
     return 0;
 }
