@@ -5,20 +5,27 @@
 import random
 word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
+word_lenth = len(chosen_word)
 
 print(f'psst, the chosen solution is {chosen_word}.')
 
 # TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
-chosen_word = random.choice(word_list)
+display = []
+for _ in range(word_length):
+    display += "-"
 
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-guess = input("Guess a letter: ").lower()
+end_of_game = False
+while not end_of_game:
+    guess = input("Guess a letter: ").lower()
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
-for letter in chosen_word:
+for position in range(word_lenth):
+    letter = chosen_word[position]
+    print(
+        f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
     if letter == guess:
-        print("right")
-    else:
-        print("wrong")
+        display[position] = letter
+print(display)
 # TODO-2: - Loop through each position in the chosen_word;
 # If the letter at that position matches 'guess' then reveal that letter in the display at that position.
 # e.g. If the user guessed "p" and the chosen word was "apple", then display should be ["_", "p", "p", "_", "_"].
